@@ -37,8 +37,9 @@ def predict():
     with torch.no_grad():
         output = model(input_data)
 
-    return {'prediction': output.item()} #json file idk what to do with this
+    return {'prediction': output.item()} 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
