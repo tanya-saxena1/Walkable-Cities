@@ -3,7 +3,7 @@ import googlemaps
 import random
 import pandas as pd
 
-api_key = "asdfghjkl"
+api_key = ""
 googlemapsSession = googlemaps.Client(api_key)
 
 class City:
@@ -82,4 +82,5 @@ def main():
     df.to_json("training_data.json", orient="records", lines=True)
 
 if __name__ == "__main__":
+
     main()
